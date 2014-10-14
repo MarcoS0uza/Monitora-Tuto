@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.monitoratuto.activitys.MainActivity" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonConfig"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="124dp"
+        android:fontFamily="sans-serif-light"
+        android:onClick="parar"
+        android:textSize="24dp"
+        android:text="@string/parar" />
+
+    <Button
+        android:id="@+id/buttonConfig"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textSize="24dp"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:onClick="Config"
+        android:text="@string/configura_es" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button1"
+        android:fontFamily="sans-serif-light"
+        android:textSize="24dp"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_marginBottom="50dp"
+        android:onClick="iniciar"
+        android:text="@string/iniciar" />
+
+    <TextView
+        android:id="@+id/textViewBuild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Versão 0.0.2   Build: 071014.1158"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

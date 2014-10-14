@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.notificationteste.MainActivity" >
+
+    <item
+        android:id="@+id/tutorial"
+        android:orderInCategory="100"
+        android:title="Como usar essa porra"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/notas"
+        android:orderInCategory="100"
+        android:title="Notas de Versão"
+        app:showAsAction="never"/>
+
+</menu>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Monitora TUTO</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="chamar">Chamar</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="configura_es">Configurações</string>
+    <string name="parar">Parar</string>
+    <string name="tempo_min">Tempo Atualização(s)</string>
+    <string name="dist_ncia_min">Distância Min(Mt)</string>
+    <string name="imei">IMEI</string>
+
+</resources>
