@@ -10,22 +10,21 @@ import android.util.Log;
 
 public class CarregaParametros {
 
-    private Properties properties;
-    
-    
-    public CarregaParametros() {
-        properties = new Properties();
-        }
+	private Properties properties;
 
-    public Properties getProperties(File FileName) {
+	public CarregaParametros() {
+		properties = new Properties();
+	}
 
-        try {
-               InputStream inputStream = new FileInputStream(FileName);
-               properties.load(inputStream);
-        } catch (IOException e) {
-               Log.e("AssetsPropertyReader",e.toString());
-        }
-        return properties;
-    }
-    
+	public Properties getProperties(File FileName) {
+
+		try {
+			InputStream inputStream = new FileInputStream(FileName);
+			properties.load(inputStream);
+		} catch (IOException e) {
+			Log.e("AssetsPropertyReader", e.toString());
+		}
+		return properties;
+	}
+
 }
