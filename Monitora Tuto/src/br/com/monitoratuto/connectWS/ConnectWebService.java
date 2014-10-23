@@ -2,7 +2,6 @@ package br.com.monitoratuto.connectWS;
 
 import java.io.IOException;
 import java.sql.Timestamp;
-import java.util.ArrayList;
 
 import org.ksoap2.SoapEnvelope;
 import org.ksoap2.serialization.SoapObject;
@@ -10,12 +9,10 @@ import org.ksoap2.serialization.SoapSerializationEnvelope;
 import org.ksoap2.transport.HttpTransportSE;
 import org.xmlpull.v1.XmlPullParserException;
 
-import br.com.monitoratuto.entidade.DadosGPS;
-
 import android.os.AsyncTask;
 import android.util.Log;
 
-public class ConnectWebService extends AsyncTask<ArrayList<DadosGPS>, Void, String> {
+public class ConnectWebService extends AsyncTask<String, Void, String> {
 	private static final String SOAP_ACTION = "http://achafacilrastreamento.com.br/gravaDadosGps";
 	private static final String METODO = "gravaDadosGps";
 	private static final String NAMESPACE = "http://achafacilrastreamento.com.br";
@@ -30,7 +27,7 @@ public class ConnectWebService extends AsyncTask<ArrayList<DadosGPS>, Void, Stri
 	}
 
 	@Override
-	protected String doInBackground(ArrayList<DadosGPS>... dados) {
+	protected String doInBackground(String... s) {
 		SoapObject soap = new SoapObject(NAMESPACE, METODO);
 
 		float vel_m_s = Float.parseFloat(s[2].toString());
